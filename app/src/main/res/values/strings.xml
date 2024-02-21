@@ -2,4 +2,16 @@
     <string name="app_name">MoniepointTakeHomeTest</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="tracking">Tracking</string>
+    <string name="sample_shipping_number">NEJ20089934122231</string>
+    <string name="shipment_number">Shipment Number</string>
+    <string name="sender">Sender</string>
+    <string name="sample_sender">Atlanta, 5243</string>
+    <string name="receiver">Receiver</string>
+    <string name="sample_receiver">Chicago, 6342</string>
+    <string name="time">Time</string>
+    <string name="sample_time">2 days - 3 days</string>
+    <string name="status">Status</string>
+    <string name="waiting_to_collect">Waiting to collect</string>
+    <string name="add_stop">Add Stop</string>
 </resources>
