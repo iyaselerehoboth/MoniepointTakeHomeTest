@@ -5,12 +5,14 @@ import androidx.room.Database
 import androidx.room.Room
 import androidx.room.RoomDatabase
 import androidx.sqlite.db.SupportSQLiteDatabase
+import com.iyaselerehoboth.moniepointtakehometest.Utils
 import com.iyaselerehoboth.moniepointtakehometest.data.dao.ShipmentDao
 import com.iyaselerehoboth.moniepointtakehometest.data.models.Shipment
 
 @Database(
     entities = [Shipment::class],
-    version = 1
+    version = 1,
+    exportSchema = false
 )
 abstract class MoniepointDatabase: RoomDatabase() {
 
@@ -29,9 +31,12 @@ abstract class MoniepointDatabase: RoomDatabase() {
             return Room.databaseBuilder(mCtx, MoniepointDatabase::class.java, "moniepoint.db")
                 .addCallback(
                     object : Callback(){
+                        override fun onOpen(db: SupportSQLiteDatabase) {
+                            super.onOpen(db)
+                        }
+
                         override fun onCreate(db: SupportSQLiteDatabase) {
                             super.onCreate(db)
-                            //TODO: Insert demo data here
                         }
                     }
                 ).build()

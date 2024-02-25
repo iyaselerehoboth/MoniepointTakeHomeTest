@@ -1,4 +1,4 @@
-package com.iyaselerehoboth.moniepointtakehometest
+package com.iyaselerehoboth.moniepointtakehometest.views.home
 
 import android.view.LayoutInflater
 import android.view.ViewGroup
@@ -6,6 +6,7 @@ import androidx.databinding.DataBindingUtil
 import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView
+import com.iyaselerehoboth.moniepointtakehometest.R
 import com.iyaselerehoboth.moniepointtakehometest.data.models.Vehicle
 import com.iyaselerehoboth.moniepointtakehometest.databinding.ItemViewAvailableVehiclesBinding
 
@@ -34,6 +35,8 @@ class VehiclesAdapter: ListAdapter<Vehicle, VehiclesAdapter.VehicleViewHolder>(V
                 mtvHeading.text = vehicle.name
                 mtvSubHeading.text = vehicle.type
             }
+
+            binding.executePendingBindings()
         }
 
     }

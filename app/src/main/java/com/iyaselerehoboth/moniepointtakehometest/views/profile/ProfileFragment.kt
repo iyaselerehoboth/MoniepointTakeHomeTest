@@ -1,13 +1,13 @@
-package com.iyaselerehoboth.moniepointtakehometest.fragments
+package com.iyaselerehoboth.moniepointtakehometest.views.profile
 
 import android.os.Bundle
-import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.fragment.app.Fragment
 import com.iyaselerehoboth.moniepointtakehometest.R
 
-class ShipmentFragment : Fragment() {
+class ProfileFragment : Fragment() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -19,7 +19,7 @@ class ShipmentFragment : Fragment() {
         savedInstanceState: Bundle?,
     ): View? {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_shipment, container, false)
+        return inflater.inflate(R.layout.fragment_profile, container, false)
     }
 
 

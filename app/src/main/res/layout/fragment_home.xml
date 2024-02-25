@@ -16,7 +16,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@color/off_white"
-        tools:context=".fragments.HomeFragment">
+        tools:context=".views.home.HomeFragment">
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:id="@+id/toolbar_layout"
@@ -81,8 +81,8 @@
                 app:layout_constraintStart_toEndOf="@+id/imgViewAvatar"
                 app:layout_constraintTop_toBottomOf="@+id/mtvLocationPlaceholder" />
 
-            <com.google.android.material.textview.MaterialTextView
-                android:id="@+id/mtvReceiptSearch"
+            <SearchView
+                android:id="@+id/svReceiptSearch"
                 android:layout_width="0dp"
                 android:layout_height="0dp"
                 android:layout_marginStart="15dp"
@@ -90,17 +90,25 @@
                 android:layout_marginEnd="15dp"
                 android:layout_marginBottom="10dp"
                 android:background="@drawable/rounded_corner_view"
-                android:drawableStart="@drawable/outline_search_24"
-                android:drawableEnd="@drawable/qr_code_scan_svgrepo_com"
-                android:drawablePadding="10dp"
-                android:gravity="center_vertical"
-                android:text="Enter your receipt number..."
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/imgViewAvatar" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <!--<com.google.android.material.search.SearchView
+            android:id="@+id/mtvReceiptSearch"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+
+            android:background="@drawable/rounded_corner_view"
+            android:drawableStart="@drawable/outline_search_24"
+            android:drawableEnd="@drawable/qr_code_scan_svgrepo_com"
+            android:drawablePadding="10dp"
+            android:gravity="center_vertical"
+            android:text="Enter your receipt number..."
+             />-->
 
         <com.google.android.material.textview.MaterialTextView
             android:id="@+id/mtvTracking"
