@@ -7,22 +7,22 @@
 
     <fragment
         android:id="@+id/homeFragment"
-        android:name="com.iyaselerehoboth.moniepointtakehometest.HomeFragment"
+        android:name="com.iyaselerehoboth.moniepointtakehometest.fragments.HomeFragment"
         android:label="fragment_home"
         tools:layout="@layout/fragment_home" />
     <fragment
         android:id="@+id/calculateFragment"
-        android:name="com.iyaselerehoboth.moniepointtakehometest.CalculateFragment"
+        android:name="com.iyaselerehoboth.moniepointtakehometest.fragments.CalculateFragment"
         android:label="fragment_calculate"
         tools:layout="@layout/fragment_calculate" />
     <fragment
         android:id="@+id/profileFragment"
-        android:name="com.iyaselerehoboth.moniepointtakehometest.ProfileFragment"
+        android:name="com.iyaselerehoboth.moniepointtakehometest.fragments.ProfileFragment"
         android:label="fragment_profile"
         tools:layout="@layout/fragment_profile" />
     <fragment
         android:id="@+id/shipmentFragment"
-        android:name="com.iyaselerehoboth.moniepointtakehometest.ShipmentFragment"
+        android:name="com.iyaselerehoboth.moniepointtakehometest.fragments.ShipmentFragment"
         android:label="fragment_shipment"
         tools:layout="@layout/fragment_shipment" />
 </navigation>
